@@ -15,6 +15,8 @@
 		8A1E5ABB206586F500E0D9D6 /* FlagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E5AB9206586F500E0D9D6 /* FlagsViewController.swift */; };
 		8A1E5ABF2065870000E0D9D6 /* FlagsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E5ABD2065870000E0D9D6 /* FlagsCollectionViewCell.swift */; };
 		8A1E5AC02065870000E0D9D6 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E5ABE2065870000E0D9D6 /* Resources.swift */; };
+		8A1E5AC320659A1400E0D9D6 /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E5AC220659A1400E0D9D6 /* CoinsViewController.swift */; };
+		8A1E5AC520659C6A00E0D9D6 /* CoinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E5AC420659C6A00E0D9D6 /* CoinsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8A1E5AB9206586F500E0D9D6 /* FlagsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagsViewController.swift; sourceTree = "<group>"; };
 		8A1E5ABD2065870000E0D9D6 /* FlagsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagsCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A1E5ABE2065870000E0D9D6 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		8A1E5AC220659A1400E0D9D6 /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
+		8A1E5AC420659C6A00E0D9D6 /* CoinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			children = (
 				8A1E5AB8206586F500E0D9D6 /* BlackNavigationController.swift */,
 				8A1E5AB9206586F500E0D9D6 /* FlagsViewController.swift */,
+				8A1E5AC220659A1400E0D9D6 /* CoinsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			children = (
 				8A1E5ABE2065870000E0D9D6 /* Resources.swift */,
 				8A1E5ABD2065870000E0D9D6 /* FlagsCollectionViewCell.swift */,
+				8A1E5AC420659C6A00E0D9D6 /* CoinsCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1E5AC520659C6A00E0D9D6 /* CoinsCollectionViewCell.swift in Sources */,
 				8A1E5ABB206586F500E0D9D6 /* FlagsViewController.swift in Sources */,
 				8A1E5ABA206586F500E0D9D6 /* BlackNavigationController.swift in Sources */,
 				8A1E5AC02065870000E0D9D6 /* Resources.swift in Sources */,
+				8A1E5AC320659A1400E0D9D6 /* CoinsViewController.swift in Sources */,
 				8A1E5ABF2065870000E0D9D6 /* FlagsCollectionViewCell.swift in Sources */,
 				8A1E5AA62065864C00E0D9D6 /* AppDelegate.swift in Sources */,
 			);

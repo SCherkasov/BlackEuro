@@ -14,6 +14,6 @@ class Resources {
     }
     
     public static let blackCoinPictures = {
-        (1...22).map { String(describing: $0) }
+        ["1c", "2c", "5c", "10c", "20c", "50c", "1e", "2e", "GermanyF"].map { String(describing: $0) }
     }
 }
