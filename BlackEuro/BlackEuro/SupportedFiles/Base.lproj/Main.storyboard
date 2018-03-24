@@ -188,6 +188,9 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8Z-XZ-uJ6">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                                    <connections>
+                                                        <segue destination="MTy-Mw-vgp" kind="show" id="0cs-yc-pV3"/>
+                                                    </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3Z-MR-5fl">
                                                     <rect key="frame" x="0.0" y="100" width="100" height="10"/>
@@ -267,6 +270,135 @@
             </objects>
             <point key="canvasLocation" x="1160.8" y="117.39130434782609"/>
         </scene>
+        <!--Year Coins View Controller-->
+        <scene sceneID="LD1-wy-WCH">
+            <objects>
+                <viewController id="MTy-Mw-vgp" customClass="YearCoinsViewController" customModule="BlackEuro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KMS-ZC-39h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUC-yz-jCn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlackEuro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My3-Y8-RsX">
+                                        <rect key="frame" x="133" y="69" width="109" height="28"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unlock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-pL-6vg">
+                                        <rect key="frame" x="321.5" y="141" width="45.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="My3-Y8-RsX" firstAttribute="centerY" secondItem="YUC-yz-jCn" secondAttribute="centerY" id="AnZ-6O-So2"/>
+                                    <constraint firstItem="My3-Y8-RsX" firstAttribute="centerX" secondItem="YUC-yz-jCn" secondAttribute="centerX" id="RAk-vC-dji"/>
+                                    <constraint firstAttribute="bottom" secondItem="5zO-pL-6vg" secondAttribute="bottom" constant="8" id="Unr-EY-KDi"/>
+                                    <constraint firstAttribute="trailing" secondItem="5zO-pL-6vg" secondAttribute="trailing" constant="8" id="fDb-G6-4Ht"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rsr-S7-uys">
+                                <rect key="frame" x="0.0" y="167" width="375" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BYR-Z4-1kH">
+                                    <size key="itemSize" width="100" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell2" id="7Hj-d4-W5J" customClass="YearCoinsCollectionViewCell" customModule="BlackEuro" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1e" translatesAutoresizingMaskIntoConstraints="NO" id="FIQ-L6-Zkz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyn-lS-M24">
+                                                    <rect key="frame" x="0.0" y="100" width="100" height="10"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYO-ks-ymR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="10"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="7zJ-f5-h19"/>
+                                                                <constraint firstAttribute="height" constant="10" id="Ott-f2-deW"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="fYO-ks-ymR" firstAttribute="leading" secondItem="Uyn-lS-M24" secondAttribute="leading" id="N5Q-we-Zyr"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fYO-ks-ymR" secondAttribute="trailing" id="NFh-Qg-pB4"/>
+                                                        <constraint firstItem="fYO-ks-ymR" firstAttribute="top" secondItem="Uyn-lS-M24" secondAttribute="top" id="j1h-ZE-OJY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="fYO-ks-ymR" secondAttribute="bottom" id="jKf-dl-JM4"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="po9-aO-yf0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Uyn-lS-M24" firstAttribute="leading" secondItem="7Hj-d4-W5J" secondAttribute="leading" id="6Pf-wi-TS9"/>
+                                            <constraint firstAttribute="trailing" secondItem="po9-aO-yf0" secondAttribute="trailing" id="Aba-Yi-9jZ"/>
+                                            <constraint firstItem="Uyn-lS-M24" firstAttribute="top" secondItem="FIQ-L6-Zkz" secondAttribute="bottom" id="Ap2-er-e5I"/>
+                                            <constraint firstItem="FIQ-L6-Zkz" firstAttribute="top" secondItem="7Hj-d4-W5J" secondAttribute="top" id="BOs-LD-eya"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uyn-lS-M24" secondAttribute="trailing" id="EMT-TV-0jk"/>
+                                            <constraint firstItem="Uyn-lS-M24" firstAttribute="top" secondItem="po9-aO-yf0" secondAttribute="bottom" id="SmU-7v-xOe"/>
+                                            <constraint firstAttribute="trailing" secondItem="FIQ-L6-Zkz" secondAttribute="trailing" id="WbF-8B-tdo"/>
+                                            <constraint firstItem="FIQ-L6-Zkz" firstAttribute="leading" secondItem="7Hj-d4-W5J" secondAttribute="leading" id="cah-hN-mcs"/>
+                                            <constraint firstItem="Uyn-lS-M24" firstAttribute="height" secondItem="FIQ-L6-Zkz" secondAttribute="height" multiplier="0.1" id="ctY-SL-WFd"/>
+                                            <constraint firstItem="po9-aO-yf0" firstAttribute="leading" secondItem="7Hj-d4-W5J" secondAttribute="leading" id="dzp-3A-UQn"/>
+                                            <constraint firstAttribute="bottom" secondItem="Uyn-lS-M24" secondAttribute="bottom" id="rzA-ld-3mK"/>
+                                            <constraint firstItem="Uyn-lS-M24" firstAttribute="top" secondItem="FIQ-L6-Zkz" secondAttribute="bottom" id="x8B-DB-Nnf"/>
+                                            <constraint firstItem="po9-aO-yf0" firstAttribute="top" secondItem="7Hj-d4-W5J" secondAttribute="top" id="zE7-Bi-1D5"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="lockYearCoinsImage" destination="po9-aO-yf0" id="vJu-91-L7E"/>
+                                            <outlet property="myYearCoinsImage" destination="FIQ-L6-Zkz" id="Zgj-13-b38"/>
+                                            <outlet property="yearCoinNameLabel" destination="fYO-ks-ymR" id="wmi-ry-sn0"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="MTy-Mw-vgp" id="gxe-6g-K2O"/>
+                                    <outlet property="delegate" destination="MTy-Mw-vgp" id="s0t-EV-e9c"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rsr-S7-uys" firstAttribute="bottom" secondItem="6wp-If-a9D" secondAttribute="bottom" id="6W0-C9-D6e"/>
+                            <constraint firstItem="YUC-yz-jCn" firstAttribute="trailing" secondItem="6wp-If-a9D" secondAttribute="trailing" id="Iuw-xE-tPz"/>
+                            <constraint firstItem="rsr-S7-uys" firstAttribute="top" secondItem="YUC-yz-jCn" secondAttribute="bottom" id="T3m-bF-mmW"/>
+                            <constraint firstItem="rsr-S7-uys" firstAttribute="top" secondItem="YUC-yz-jCn" secondAttribute="bottom" id="VZE-0N-X09"/>
+                            <constraint firstItem="rsr-S7-uys" firstAttribute="height" secondItem="YUC-yz-jCn" secondAttribute="height" multiplier="3" id="Zcd-Rr-jRu"/>
+                            <constraint firstItem="YUC-yz-jCn" firstAttribute="top" secondItem="KMS-ZC-39h" secondAttribute="top" id="db6-ZB-o8W"/>
+                            <constraint firstItem="YUC-yz-jCn" firstAttribute="leading" secondItem="6wp-If-a9D" secondAttribute="leading" id="rrc-0d-nwg"/>
+                            <constraint firstItem="rsr-S7-uys" firstAttribute="leading" secondItem="6wp-If-a9D" secondAttribute="leading" id="vCV-sP-ACl"/>
+                            <constraint firstItem="rsr-S7-uys" firstAttribute="trailing" secondItem="6wp-If-a9D" secondAttribute="trailing" id="xyE-Zj-KXx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6wp-If-a9D"/>
+                    </view>
+                    <connections>
+                        <outlet property="yearCoinCollectionView" destination="rsr-S7-uys" id="FAI-qh-FrG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q52-Rv-ofL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="116.49175412293854"/>
+        </scene>
         <!--Black Navigation Controller-->
         <scene sceneID="Wm7-In-Iok">
             <objects>
@@ -286,4 +418,8 @@
             <point key="canvasLocation" x="-246" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1e" width="400" height="400"/>
+        <image name="lock" width="512" height="512"/>
+    </resources>
 </document>
