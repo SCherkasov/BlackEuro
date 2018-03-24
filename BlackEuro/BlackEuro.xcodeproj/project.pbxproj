@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A03C68D2066C692001BCE52 /* DetailCoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03C68C2066C692001BCE52 /* DetailCoinsViewController.swift */; };
 		8A1E5AA62065864C00E0D9D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1E5AA52065864C00E0D9D6 /* AppDelegate.swift */; };
 		8A1E5AAB2065864C00E0D9D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1E5AA92065864C00E0D9D6 /* Main.storyboard */; };
 		8A1E5AAD2065864C00E0D9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1E5AAC2065864C00E0D9D6 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A03C68C2066C692001BCE52 /* DetailCoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoinsViewController.swift; sourceTree = "<group>"; };
 		8A1E5AA22065864C00E0D9D6 /* BlackEuro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackEuro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1E5AA52065864C00E0D9D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A1E5AAA2065864C00E0D9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				8A1E5AB9206586F500E0D9D6 /* FlagsViewController.swift */,
 				8A1E5AC220659A1400E0D9D6 /* CoinsViewController.swift */,
 				8A2E3DD7206696CF00344186 /* YearCoinsViewController.swift */,
+				8A03C68C2066C692001BCE52 /* DetailCoinsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				8A2E3DD8206696CF00344186 /* YearCoinsViewController.swift in Sources */,
 				8A1E5AC320659A1400E0D9D6 /* CoinsViewController.swift in Sources */,
 				8A1E5ABF2065870000E0D9D6 /* FlagsCollectionViewCell.swift in Sources */,
+				8A03C68D2066C692001BCE52 /* DetailCoinsViewController.swift in Sources */,
 				8A1E5AA62065864C00E0D9D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
