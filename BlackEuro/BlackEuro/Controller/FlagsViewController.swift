@@ -13,6 +13,7 @@ class FlagsViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var flagsCollectionView: UICollectionView!
     
     let blackFlagPictures = Resources.blackFlagPictures()
+    let blackFlagLabels = Resources.blackFlagLabels
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,7 @@ class FlagsViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FlagsCollectionViewCell
         cell.myFlagsImage.image = UIImage(named: blackFlagPictures[indexPath.row] + ".JPG")
+        cell.flagNameLabel.text = blackFlagLabels()[indexPath.row]
         
         return cell
     }

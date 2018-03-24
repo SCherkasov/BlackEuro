@@ -12,6 +12,7 @@ class CoinsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var coinsDetailButton: UIButton!
     @IBOutlet weak var myCoinsImage: UIImageView!
+    @IBOutlet weak var coinNameLabel: UILabel!
     
     public var mode: Mode = .view {
         didSet {

@@ -25,6 +25,7 @@ class CoinsViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     let blackCoinPictures = Resources.blackCoinPictures()
+    let blackCoinLabels = Resources.blackCoinLabels()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,8 @@ class CoinsViewController: UIViewController, UICollectionViewDataSource, UIColle
             .map { (coinCell) -> CoinsCollectionViewCell in
                 coinCell.mode = self.mode
                 coinCell.myCoinsImage.image = UIImage(named: blackCoinPictures[indexPath.row] + ".JPG")
+                
+                coinCell.coinNameLabel.text = blackCoinLabels[indexPath.row]
                 
                 return coinCell
         }

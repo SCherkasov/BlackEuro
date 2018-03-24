@@ -13,6 +13,7 @@ class FlagsCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var myFlagsImage: UIImageView!
     
+    @IBOutlet weak var flagNameLabel: UILabel!
     
     
 }
