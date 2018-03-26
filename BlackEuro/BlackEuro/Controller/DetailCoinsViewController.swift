@@ -10,6 +10,8 @@ import UIKit
 
 class DetailCoinsViewController: UITableViewController {
     
+    @IBOutlet var detailCoinsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
