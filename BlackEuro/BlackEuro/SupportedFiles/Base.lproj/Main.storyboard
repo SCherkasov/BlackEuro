@@ -421,7 +421,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyq-BX-lfX">
                                 <rect key="frame" x="0.0" y="167" width="375" height="500"/>
                                 <connections>
-                                    <segue destination="jXr-L6-YOc" kind="embed" id="dKs-45-rUz"/>
+                                    <segue destination="jXr-L6-YOc" kind="embed" id="Hgl-hT-cRf"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUh-9m-78u">
@@ -460,10 +460,10 @@
             </objects>
             <point key="canvasLocation" x="2604" y="116"/>
         </scene>
-        <!--Detail Coins View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="lLZ-8O-FDC">
             <objects>
-                <tableViewController id="jXr-L6-YOc" customClass="DetailCoinsViewController" customModule="BlackEuro" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jXr-L6-YOc" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k2y-JZ-BML">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -654,14 +654,7 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="jXr-L6-YOc" id="dDf-Iz-uAR"/>
-                            <outlet property="delegate" destination="jXr-L6-YOc" id="95t-Yx-lwR"/>
-                        </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="detailCoinsTableView" destination="k2y-JZ-BML" id="lfh-0P-JPg"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ld7-df-XQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -675,6 +668,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y6Y-gK-y2g">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
