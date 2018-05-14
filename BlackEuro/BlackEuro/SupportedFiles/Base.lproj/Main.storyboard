@@ -349,7 +349,6 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94J-WJ-wAO">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
-                                                    <state key="normal" title="Button"/>
                                                     <connections>
                                                         <segue destination="6Dr-Lo-efJ" kind="show" id="s2g-Du-lNt"/>
                                                     </connections>
@@ -481,12 +480,17 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="occ-vv-dfJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11e" translatesAutoresizingMaskIntoConstraints="NO" id="OSw-C6-Lby">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11e" translatesAutoresizingMaskIntoConstraints="NO" id="OSw-C6-Lby">
                                                             <rect key="frame" x="8" y="8" width="180" height="180"/>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1e" translatesAutoresizingMaskIntoConstraints="NO" id="0tS-en-9bZ">
                                                             <rect key="frame" x="187" y="8" width="180" height="180"/>
                                                         </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAx-TU-4yR">
+                                                            <rect key="frame" x="8" y="8" width="180" height="180"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" title="Button"/>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -634,9 +638,9 @@
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1m6-it-XPA">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Alpine gentian - a flower growing in the Alps at an altitude of 2000-2600 m. The coin denomination in German - "EIN EURO CENT" is indicated in the semicircle. Below are three alternating strips (rough-smooth-rough), symbolizing the Austrian flag and the date of issue of the coin.</string>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
